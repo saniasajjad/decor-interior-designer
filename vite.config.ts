@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/decor-interior-designer/', // ⭐ IMPORTANT for GitHub Pages ⭐
+  base: process.env.VERCEL ? '/' : '/decor-interior-designer/',
 
   server: {
     port: 3000,
@@ -20,6 +20,6 @@ export default defineConfig({
   },
 
   css: {
-    postcss: './postcss.config.js', // Ensure PostCSS is used
+    postcss: './postcss.config.js',
   }
 });
