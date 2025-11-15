@@ -3,7 +3,8 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: process.env.VERCEL ? '/' : '/decor-interior-designer/',
+  // Use root path for Vercel, subdirectory path for GitHub Pages
+  base: process.env.VERCEL || process.env.VERCEL_URL ? '/' : '/decor-interior-designer/',
 
   server: {
     port: 3000,
