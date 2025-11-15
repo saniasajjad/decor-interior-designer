@@ -1,5 +1,6 @@
 {
-  "name": "decor:-interior-designer",
+  "name": "decor-interior-designer",
+  "homepage": "https://saniaasjad.github.io/decor-interior-designer",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -24,3 +25,4 @@
     "vite": "^6.2.0"
   }
 }
+
